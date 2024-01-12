@@ -4,6 +4,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-block-start-color: rgb(228, 228, 228);
 }
 .left-section {
     display: flex;
@@ -85,6 +96,23 @@
 }
 .notifications-icon {
     height: 24px;
+}
+.notifications-icon-container {
+    position: relative;
+}
+.notifications-count {
+    position: absolute;
+    right: -2px;
+    top: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
 }
 .my-channel-icon {
     height: 32px;
